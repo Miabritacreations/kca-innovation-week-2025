@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCA Innovation Week - Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1f2f57;
+            color: white;
+        }
+        .test-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .test-button {
+            background: #d4af37;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>KCA Innovation Week - Test Page</h1>
+        <p>If you can see this page, your browser is working correctly.</p>
+        
+        <h2>Test Results:</h2>
+        <div id="test-results">
+            <p>✅ HTML is working</p>
+            <p>✅ CSS is working</p>
+            <p id="js-test">⏳ Testing JavaScript...</p>
+        </div>
+        
+        <button class="test-button" onclick="testJavaScript()">Test JavaScript</button>
+        <button class="test-button" onclick="testExternalLinks()">Test External Links</button>
+        
+        <div id="external-test" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function testJavaScript() {
+            document.getElementById('js-test').innerHTML = '✅ JavaScript is working';
+            alert('JavaScript is working!');
+        }
+        
+        function testExternalLinks() {
+            const testDiv = document.getElementById('external-test');
+            testDiv.innerHTML = '<h3>Testing External Resources:</h3>';
+            
+            // Test Google Fonts
+            const fontTest = document.createElement('p');
+            fontTest.style.fontFamily = 'Inter, sans-serif';
+            fontTest.textContent = 'Testing Google Fonts (Inter) - If this looks different, fonts are working';
+            testDiv.appendChild(fontTest);
+            
+            // Test Font Awesome
+            const iconTest = document.createElement('p');
+            iconTest.innerHTML = 'Testing Font Awesome: <i class="fas fa-rocket"></i> <i class="fas fa-star"></i>';
+            testDiv.appendChild(iconTest);
+        }
+        
+        // Auto-test on load
+        window.onload = function() {
+            testJavaScript();
+        };
+    </script>
+</body>
+</html> 

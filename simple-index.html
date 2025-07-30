@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KCA Innovation Week 2025 - Simple Version</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <img src="kcaulogo.png" alt="KCA University Logo" class="logo-image">
+        </div>
+        <div class="logo-text">
+          <span class="main-text">KCA</span>
+          <span class="sub-text">Innovation</span>
+        </div>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">4th Innovation Week</span>
+        <span class="hero-subtitle">& Industry Summit 2025</span>
+      </h1>
+      <p class="hero-description">Innovate. Elevate. Impact.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">
+          <i class="fas fa-play"></i>
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About the Event</h2>
+        <p class="section-subtitle">KCA's Flagship Innovation Platform</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>The 4th Innovation Week and Industry Summit is KCA University's flagship platform to promote research, entrepreneurship, and partnerships while supporting Kenya's innovation and sustainability agenda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact & Venue</h2>
+        <p class="section-subtitle">Get in touch with us</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Venue</h3>
+              <p>KCA University Main Campus<br>Ruaraka, Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Event Time</h3>
+              <p>October 28-30, 2025<br>9:00 AM - 6:00 PM Daily</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <img src="kcaulogo.png" alt="KCA University Logo" class="logo-image">
+            </div>
+            <div class="logo-text">
+              <span class="main-text">KCA</span>
+              <span class="sub-text">Innovation Week</span>
+            </div>
+          </div>
+          <p>Empowering the next generation of innovators and entrepreneurs in Kenya and beyond.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KCA University | Designed for the Innovation Week Web Challenge</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for basic functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Website loaded successfully!');
+      
+      // Simple navigation
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

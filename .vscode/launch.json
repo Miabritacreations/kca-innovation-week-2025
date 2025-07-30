@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome - Main Website",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome - Working Version",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/working-index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome - Simple Version",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/simple-index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome - Test Version",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/final-test.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome with DevTools",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--auto-open-devtools-for-tabs"
+      ]
+    }
+  ]
+}
